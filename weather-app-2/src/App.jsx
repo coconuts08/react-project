@@ -2,6 +2,7 @@ import React from 'react';
 import SearchInput from './components/SearchInput';
 import WeatherCard from './components/WeatherCard';
 import { useFetch } from './hooks/useFetch';
+import Footer from './components/Footer';
 
 const WeatherApp = () => {
   const [city, setCity] = React.useState('');
@@ -56,7 +57,9 @@ const WeatherApp = () => {
           {!loading && !error && weatherData && <WeatherCard data={weatherData} />}
         </div>
       </div>
+      <Footer/>
     </div>
+    
   );
 };
 
