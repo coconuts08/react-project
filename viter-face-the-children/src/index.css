@@ -1,0 +1,52 @@
+
+
+@import "tailwindcss";
+@theme{
+  --color-primary: #1e41ff;
+  --color-primary-dark: #030d45;
+  --color-lightgray: #f5f5f5;
+
+  --animate-ticker: ticker 10s ease-in-out infinite;
+
+  @keyframes ticker {
+    0% {
+      transform: translateX(-60%);
+    }
+
+    100% {
+       {
+        transform: translateX(60%);
+      }
+    }
+  }
+}
+
+
+
+
+
+@layer base{
+h1,
+h2,
+h3,
+h4{
+  @apply font-medium;
+}
+h1{
+  @apply text-[clamp(2rem,_calc(3rem+1vw),_4rem)]/15 mb-5 ;
+
+}
+h2{
+  @apply text-[clamp(1.6rem,_calc(2.5rem+1vw),_3rem)]/18 mb-2;
+
+}
+
+p{
+  @apply mb-5 text-base/7;
+}
+
+
+  .container{
+    @apply max-w-[1400px] mx-auto w-full;
+  }
+}
