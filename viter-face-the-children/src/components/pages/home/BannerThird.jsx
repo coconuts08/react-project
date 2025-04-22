@@ -21,7 +21,7 @@ const BannerThird = () => {
       </a>
     </div>
     <div className="mb-12 md:mb-0 md:w-1/2">
-      <img src="https://facethechildren.org/images/website/h-service.webp" alt="Children Graphic" className="w-full max-w-md mx-auto" />
+      <img src="https://facethechildren.org/images/website/h-service.webp" alt="Our Solutions img" className="w-full max-w-md mx-auto" />
     </div>
   </section>
   )

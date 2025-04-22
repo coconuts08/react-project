@@ -1,14 +1,23 @@
 import React from 'react'
-import Header from './header'
+
+
+
+
+
+
+
 import Banner from './Banner'
 import BannerSecond from './BannerSecond'
 import BannerThird from './BannerThird'
 import Affiliate from './Affiliate'
-import Footer from './Footer'
+import Header from '../../partials/Header'
+import Footer from '../../partials/Footer'
+
 
 const Home = () => {
   return (
     <>
+    
     <Header/>
       <Banner/>
       <BannerSecond/>

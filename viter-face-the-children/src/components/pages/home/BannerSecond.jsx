@@ -7,7 +7,7 @@ const BannerSecond = () => {
       <div className="w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
         <img
           src="https://facethechildren.org/images/website/h-about.webp"
-          alt="img3"
+          alt="Who We Are image"
           className="w-100 max-w-lg md:max-w-xl rounded-lg"
         />
       </div>
