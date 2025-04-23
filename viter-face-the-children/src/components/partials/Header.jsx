@@ -15,9 +15,7 @@ const Header = () => {
       <div />
       <div className="flex space-x-4">
         <a href="#">Visit Philippine Frontline Ministries</a>
-        <a href="#" className="hover:underline">
-          Login
-        </a>
+        <Link to="/login" className="text-white">login </Link>
       </div>
     </div>
   </header>

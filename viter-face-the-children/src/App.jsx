@@ -12,6 +12,11 @@ import PageNotFound from './components/partials/PageNotFound'
 import Home from './components/pages/home/Home'
 import AboutHolder from './components/pages/about/AboutHolder'
 import SponsorSection from './components/pages/sponsor/SponsorSection'
+import Login from './components/pages/login/Login'
+import CreateAccount from './components/pages/login/CreateAccount'
+import ForgotPassword from './components/pages/login/ForgotPassword'
+import ChildDetails from './components/pages/sponsor/ChildDetails'
+import ChildDetailsHolder from './components/pages/sponsor/ChildDetailsHolder'
 
 
 
@@ -34,6 +39,10 @@ const App = () => {
         <Route path="/contact" element={<ContactSection/>}/>
         <Route path="/sponsor" element={<SponsorSection/>}/>
         <Route path="/donate" element={<Donate/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/create-account" element={<CreateAccount/>}/>
+        <Route path="/forgot-password" element={<ForgotPassword/>}/>
+        <Route path="/child-details" element={<ChildDetailsHolder/>}/>
         
       </Routes>
     </Router>
