@@ -8,15 +8,16 @@ const givingOptions = [
     {
       title: "Feeding Program",
       description:
-        "Weekly Community Development Programs (CDP) in impoverished communities. These gatherings consist of providing a meal for the children, story–",
+        "Weekly Community Development Programs (CDP) in impoverished communities. These gatherings consist of providing a meal for the children, story-telling, games, assistance with homework, and gift-giving when possible.",
       image: "https://facethechildren.org/images/feeding (1).jpg",
     },
     {
       title: "General Donation",
       description:
-        "Give unrestricted gifts that allow Frontline to direct these funds where they are most needed. Your giving allows us to continue to actively partner with needs ...",
+        "Give unrestricted gifts that allow Frontline to direct these funds where they are most needed. Your giving allows us to continue to actively partner with needs of people in the communities we serve.",
       image: "https://facethechildren.org/images/General-giving.jpg",
     },
+    
   ];
   
   export default givingOptions;

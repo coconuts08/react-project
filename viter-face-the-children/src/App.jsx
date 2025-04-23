@@ -17,6 +17,8 @@ import CreateAccount from './components/pages/login/CreateAccount'
 import ForgotPassword from './components/pages/login/ForgotPassword'
 import ChildDetails from './components/pages/sponsor/ChildDetails'
 import ChildDetailsHolder from './components/pages/sponsor/ChildDetailsHolder'
+import DonateDetails from './components/pages/donate/DonateDetails'
+import DonateDetailsHolder from './components/pages/donate/DonateDetailsHolder'
 
 
 
@@ -43,6 +45,7 @@ const App = () => {
         <Route path="/create-account" element={<CreateAccount/>}/>
         <Route path="/forgot-password" element={<ForgotPassword/>}/>
         <Route path="/child-details" element={<ChildDetailsHolder/>}/>
+        <Route path="/donate-details" element={<DonateDetailsHolder/>}/>
         
       </Routes>
     </Router>

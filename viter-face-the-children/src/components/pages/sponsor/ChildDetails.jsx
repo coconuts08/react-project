@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import ModalSponsor from "../../partials/modals/ModalSponsor";
+
 
 const ChildDetails = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const child = location.state?.child;
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   if (!child) {
-    // If someone goes to /child-details directly
     return (
       <div className="p-4 text-center">
         <p className="text-gray-600">No child data found.</p>
@@ -26,7 +37,6 @@ const ChildDetails = () => {
   return (
     <div className="px-4 py-8 max-w-5xl mx-auto pt-30">
       <div className="flex flex-col md:flex-row gap-6 items-start">
-        {/* Left: Image and progress */}
         <div className="w-full md:w-1/3">
           <div className="overflow-hidden aspect-[3/4]">
             <img
@@ -46,29 +56,28 @@ const ChildDetails = () => {
           </div>
         </div>
 
-        {/* Right: Info */}
         <div className="w-full md:w-2/3">
-  <h2 className="text-xl font-semibold mb-2">{child.name}</h2>
+          <h2 className="text-xl font-semibold mb-2">{child.name}</h2>
+          <p className="text-sm mb-1"><strong>Age:</strong> {child.age}</p>
+          <p className="text-sm mb-4"><strong>Birthday:</strong> {child.birthday}</p>
 
-  <p className="text-sm mb-1">
-    <strong>Age:</strong> {child.age}
-  </p>
+          <h3 className="font-semibold text-md mb-1">My Story</h3>
+          <p className="text-sm text-gray-700 mb-4">
+            {child.story ? child.story : "This child's story will be added soon."}
+          </p>
 
-  <p className="text-sm mb-4">
-    <strong>Birthday:</strong> {child.birthday}
-  </p>
-
-  <h3 className="font-semibold text-md mb-1">My Story</h3>
-  <p className="text-sm text-gray-700 mb-4">
-    {child.story ? child.story : "This child's story will be added soon."}
-  </p>
-
-  <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-    Sponsor Now
-  </button>
-</div>
-
+          <button
+            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+            onClick={openModal}
+          >
+            Sponsor Now
+          </button>
+        </div>
       </div>
+
+      {isModalOpen && (
+        <ModalSponsor child={child} onClose={closeModal} />
+      )}
     </div>
   );
 };
