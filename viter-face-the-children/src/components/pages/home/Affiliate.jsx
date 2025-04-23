@@ -6,7 +6,7 @@ const Affiliate = () => {
       <h4 className="text-orange-500 text-sm font-medium uppercase mb-2">
         Trusted Affiliates
       </h4>
-      <h2 className="text-3xl font-bold text-blue-400 mb-10">
+      <h2 className="text-3xl font-semibold text-blue-400 mb-10">
         Our Advocacy Associates
       </h2>
 

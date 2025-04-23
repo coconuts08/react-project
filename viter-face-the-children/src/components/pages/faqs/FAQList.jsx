@@ -25,7 +25,7 @@ const FAQList = () => {
       <div className="space-y-4 relative">
         {faqs.map((faq, index) => (
           <div key={index} className="relative md:flex md:items-start">
-            {/* Question */}
+          
             <button
               onClick={() => handleClick(index)}
               className={`
@@ -46,7 +46,7 @@ const FAQList = () => {
               />
             </button>
 
-            {/* Answer */}
+          
             {activeIndex === index && (
               <div
                 className={`

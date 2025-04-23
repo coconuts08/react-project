@@ -50,3 +50,28 @@ p{
     @apply max-w-[1400px] mx-auto w-full;
   }
 }
+
+
+.burger__menu {
+  @apply md:hidden;
+}
+
+.burger__menu span {
+  @apply w-[1.5rem] h-[.2rem] bg-blue-400 block rounded-full transition-all;
+}
+
+.burger__menu span:nth-child(2) {
+  @apply my-1;
+}
+
+.burger__menu.open span:first-child {
+  @apply transform translate-y-[9px] rotate-[225deg] transition-all;
+}
+
+.burger__menu.open span:nth-child(2) {
+  @apply opacity-0 transition-all;
+}
+
+.burger__menu.open span:last-child {
+  @apply transform translate-y-[-6px] rotate-[-225deg] transition-all;
+}

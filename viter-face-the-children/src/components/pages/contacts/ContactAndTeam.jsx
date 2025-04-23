@@ -22,14 +22,14 @@ const FloatingInput = ({ label, type = "text", name }) => (
 const ContactAndTeam = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-16 py-12 md:py-16 space-y-20 md:pt-30">
-      {/* Contact Section */}
+
       <section className="flex flex-col lg:flex-row justify-between gap-10">
-        {/* Left: Text Info */}
+      
         <div className="lg:w-1/2 space-y-6">
           <h5 className="text-sm text-orange-500 font-semibold uppercase tracking-wide">
             Let's Talk
           </h5>
-          <h2 className="text-2xl md:text-3xl font-bold text-blue-400">
+          <h2 className="text-2xl md:text-3xl font-semibold text-blue-400">
             We’re Here for You
           </h2>
           <p className="text-gray-700 leading-relaxed text-sm md:text-base">
@@ -57,7 +57,7 @@ const ContactAndTeam = () => {
           </div>
         </div>
 
-        {/* Right: Contact Form */}
+     
         <div className="w-full lg:w-1/2">
             <form className="flex flex-col gap-4 text-sm">
               <FloatingInput label="Name" name="name" />
@@ -65,7 +65,6 @@ const ContactAndTeam = () => {
               <FloatingInput label="Phone" name="phone" type="tel" />
               <FloatingInput label="Subject" name="subject" />
 
-              {/* Message textarea */}
               <div className="relative w-full">
                 <textarea
                   id="message"
@@ -93,20 +92,20 @@ const ContactAndTeam = () => {
           </div>
       </section>
 
-      {/* Our Team Section */}
+      
       <section className="text-center space-y-10 ">
         <div>
           <h5 className="text-sm text-orange-500 font-semibold uppercase tracking-wide">
             Get to know us
           </h5>
-          <h2 className="text-2xl md:text-3xl font-bold text-blue-400">Our Dedicated Team</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-blue-400">Our Dedicated Team</h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 justify-items-center">
-          {/* Member 1 */}
+     
           <div className="space-y-2 text-center">
             <img
-              src="https://facethechildren.org/images/website/team-judea.webp"
+              src="./public/img/Contact/team-judea.webp"
               alt="Judea Delos Santos"
               className="w-60 h-60 mx-auto object-cover grayscale "
             />
@@ -117,10 +116,10 @@ const ContactAndTeam = () => {
             </a>
           </div>
 
-          {/* Member 2 */}
+   
           <div className="space-y-2 text-center">
             <img
-              src="https://facethechildren.org/images/website/team-mike.webp"
+              src="./public/img/Contact/team-mike.webp"
               alt="Michael Gordon"
               className="w-60 h-60 mx-auto object-cover grayscale "
             />
@@ -131,10 +130,10 @@ const ContactAndTeam = () => {
             </a>
           </div>
 
-          {/* Member 3 */}
+      
           <div className="space-y-2 text-center">
             <img
-              src="https://facethechildren.org/images/website/team-jp.webp"
+              src="./public/img/Contact/team-jp.webp"
               alt="John Katigbak"
               className="w-60 h-60 mx-auto object-cover grayscale "
             />

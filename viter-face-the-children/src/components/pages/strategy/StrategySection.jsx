@@ -5,6 +5,7 @@ import StrategyContent from './StrategyContent'
 import Header from '../../partials/Header'
 import Footer from '../../partials/Footer'
 import ImpactMessagesecond from '../../partials/ImpactMessagesecond'
+import ImpactMessage from '../../partials/ImpactMessage'
 
 
 

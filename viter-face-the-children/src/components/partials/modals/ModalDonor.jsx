@@ -6,21 +6,24 @@ const ModalDonor = ({ isOpen, onClose, title }) => {
   return (
     <div className="fixed inset-0 flex justify-center items-center z-50 pointer-events-none">
       <div className="bg-white rounded-xl shadow-xl w-full max-w-md relative pointer-events-auto">
-        <div className="bg-blue-600 text-white px-4 py-2 rounded-t-xl flex justify-between items-center">
+        <div className="bg-primary text-white px-4 py-2 rounded-t-xl flex justify-between items-center">
           <h2 className="text-lg font-semibold">{title}</h2>
           <button onClick={onClose} className="text-white text-xl">×</button>
         </div>
         <div className="p-4 space-y-4">
         <select className="w-full border p-2 rounded" required>
             <option value="">-- Designation --</option>
+            <option value=""> Meal For Christmast</option>
           </select>
           <input className="w-full border p-2 rounded" type="number" placeholder="Amount" />
           <select className="w-full border p-2 rounded" required>
             <option value="">-- Frequency --</option>
+            <option value=""> One time </option>
+            <option value=""> Monthly </option>
           </select>
           <textarea className="w-full border p-2 rounded" placeholder="Remarks"></textarea>
           <input className="w-full border p-2 rounded" type="email" placeholder="Email" />
-          <button className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+          <button className="w-full bg-primary text-white py-2 rounded hover:bg-blue-600">
             Proceed
           </button>
           <div className="text-center mt-2">

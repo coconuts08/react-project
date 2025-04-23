@@ -36,7 +36,7 @@ const FAQContactForm = () => {
               <FloatingInput label="Phone" name="phone" type="tel" />
               <FloatingInput label="Subject" name="subject" />
 
-              {/* Message textarea */}
+            
               <div className="relative w-full ">
                 <textarea
                   id="message"

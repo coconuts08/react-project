@@ -7,7 +7,7 @@ const ImpactMessage = () => {
         <h4 className="text-sm text-orange-500 font-semibold uppercase mb-2 tracking-wide">
           Every Gift Counts
         </h4>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-4">
           Together, We Make a Difference
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">

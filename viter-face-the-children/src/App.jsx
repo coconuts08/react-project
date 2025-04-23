@@ -34,6 +34,7 @@ const App = () => {
         <Route path="/contact" element={<ContactSection/>}/>
         <Route path="/sponsor" element={<SponsorSection/>}/>
         <Route path="/donate" element={<Donate/>}/>
+        
       </Routes>
     </Router>
     

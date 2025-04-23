@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const isActive = (path) => location.pathname === path ? 'text-[#fc9827]' : 'text-gray-600';
+  const isActive2 = (path) => location.pathname === path ? 'text-white bg-[#fc9827] py-1 px-4 rounded-md text-sm' : 'text-white bg-[#3e9bd0] py-1 px-4 rounded-md text-sm';
 
   return (
     
@@ -26,37 +28,37 @@ const Header = () => {
 
 {/* Desktop Nav */}
 <ul className="hidden md:flex space-x-6 text-sm text-gray-800 items-center">
-  <li>
+  <li className={isActive('/')}>
     <Link to="/" className="text-textyellow">
       Home
     </Link>
   </li>
-  <li>
+  <li className={isActive('/about')}>
     <Link to="/about" className="hover:text-orange-500">
       About
     </Link>
   </li>
-  <li>
+  <li className={isActive('/faq')}>
     <Link to="/faq" className="hover:text-orange-500">
       FAQ
     </Link>
   </li>
-  <li>
+  <li className={isActive('/strategy')}>
     <Link to="/strategy" className="hover:text-orange-500">
       Strategy
     </Link>
   </li>
-  <li>
+  <li className={isActive('/contact')}>
     <Link to="/contact" className="hover:text-orange-500">
       Contact
     </Link>
   </li>
-  <li>
+  <li className={isActive('/sponsor')}>
     <Link to="/sponsor" className="hover:text-orange-500">
       Sponsor child
     </Link>
   </li>
-  <li>
+  <li className={isActive('/donate')}>
     <Link
       to="/donate"
       className="bg-primary text-white text-sm px-4 py-1 rounded hover:bg-hover"
@@ -89,70 +91,49 @@ const Header = () => {
 
       {/* Slide-in Mobile Menu */}
       <div
-        className={`fixed top-30 left-0 right-0 h-[calc(100vh-4rem)] w-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-40 ${
+        className={`fixed top-19 left-0 right-0 h-[calc(100vh-4rem)] w-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-40 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
       >
         <ul className="flex flex-col items-center justify-center space-y-4 mt-8 text-sm text-gray-800">
-          <li>
-            <a
-              href="#"
-              className="text-orange-500 font-semibold"
-              onClick={() => setIsOpen(false)}
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="hover:text-orange-500"
-              onClick={() => setIsOpen(false)}
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="hover:text-orange-500"
-              onClick={() => setIsOpen(false)}
-            >
-              FAQ
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="hover:text-orange-500"
-              onClick={() => setIsOpen(false)}
-            >
-              Strategy
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="hover:text-orange-500"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="hover:text-orange-500"
-              onClick={() => setIsOpen(false)}
-            >
-              Sponsor child
-            </a>
-          </li>
-          <li>
-            <button className="bg-blue-500 text-white text-sm px-4 py-1 w-32 rounded hover:bg-blue-600">
-              Donate
-            </button>
-          </li>
+        <li className={isActive('/')}>
+    <Link to="/" className="text-textyellow">
+      Home
+    </Link>
+  </li>
+  <li className={isActive('/about')}>
+    <Link to="/about" className="hover:text-orange-500">
+      About
+    </Link>
+  </li>
+  <li className={isActive('/faq')}>
+    <Link to="/faq" className="hover:text-orange-500">
+      FAQ
+    </Link>
+  </li>
+  <li className={isActive('/strategy')}>
+    <Link to="/strategy" className="hover:text-orange-500">
+      Strategy
+    </Link>
+  </li>
+  <li className={isActive('/contact')}>
+    <Link to="/contact" className="hover:text-orange-500">
+      Contact
+    </Link>
+  </li>
+  <li className={isActive('/sponsor')}>
+    <Link to="/sponsor" className="hover:text-orange-500">
+      Sponsor child
+    </Link>
+  </li>
+  <li className={isActive('/donate')}>
+    <Link
+      to="/donate"
+      className="bg-primary text-white text-sm px-4 py-1 rounded hover:bg-hover"
+    >
+      Donate
+    </Link>
+  </li>
         </ul>
       </div>
     </nav>

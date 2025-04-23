@@ -49,7 +49,7 @@ const ChildGrid = () => {
           return (
             <div
               key={index}
-              className="bg-white shadow-md rounded-md overflow-hidden flex flex-col w-full sm:w-[48%] md:w-[30%] lg:w-[22%] max-w-[300px]"
+              className="bg-white shadow-md overflow-hidden flex flex-col w-full sm:w-[48%] md:w-[30%] lg:w-[22%] max-w-[300px]"
             >
               <div className="relative aspect-[3/4] overflow-hidden">
                 <img

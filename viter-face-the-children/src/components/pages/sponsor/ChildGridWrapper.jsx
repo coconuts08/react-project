@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import ChildGrid from './ChildGrid';
 import ChildGridSecond from './ChildGridSecond';
 import { Home, Users } from 'lucide-react';
+import { IoHomeSharp } from 'react-icons/io5';
+import { MdFamilyRestroom } from 'react-icons/md';
 
 const ChildGridWrapper = () => {
   const [activeTab, setActiveTab] = useState('resident');
 
   return (
     <div className="px-4 py-8 max-w-7xl mx-auto md:pt-50">
-      {/* Toggle */}
+  
       <div className="flex justify-center mb-8">
         <div className="flex space-x-10 relative pt-20">
           <button
@@ -17,7 +19,7 @@ const ChildGridWrapper = () => {
               activeTab === 'resident' ? 'text-black' : 'text-gray-400'
             }`}
           >
-            <span className="text-xl"><Home/></span>
+            <span className="text-xl"><IoHomeSharp/></span>
             Resident
             {activeTab === 'resident' && (
               <span className="absolute -bottom-2 left-0 right-0 h-1 bg-orange-400 rounded"></span>
@@ -30,7 +32,7 @@ const ChildGridWrapper = () => {
               activeTab === 'non-resident' ? 'text-black' : 'text-gray-400'
             }`}
           >
-            <span className="text-xl"><Users/></span>
+            <span className="text-xl"><MdFamilyRestroom/></span>
             Non-Resident
             {activeTab === 'non-resident' && (
               <span className="absolute -bottom-2 left-0 right-0 h-1 bg-orange-400 rounded"></span>
@@ -39,7 +41,7 @@ const ChildGridWrapper = () => {
         </div>
       </div>
 
-      {/* Conditional render */}
+
       {activeTab === 'resident' ? <ChildGrid /> : <ChildGridSecond />}
     </div>
   );
