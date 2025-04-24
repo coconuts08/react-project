@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const Login = () => {
+const CreateAccount = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -38,7 +38,7 @@ const Login = () => {
             <img
               src="/ftc_svg_logo.svg"
               alt="Hand Logo"
-              className="w-100 h-20"
+              className="w-80 h-20"
             />
            
           </div>
@@ -46,10 +46,30 @@ const Login = () => {
 
         {/* Login Form */}
         <div className="bg-white rounded-lg  p-6">
-          <h2 className="text-lg font-bold text-gray-700 mb-4">LOGIN</h2>
+          <h2 className="text-lg font-bold text-gray-700 mb-4">Create a Donor Account</h2>
           <form onSubmit={handleLogin} className="space-y-4">
           <FloatingInput label="Email" name="Email" />
           <FloatingInput label="Password" name="Password" type="Password" />
+
+          <div className="relative w-full">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  className="w-full border border-gray-300 rounded-md px-3 pt-4 pb-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-400 focus:border-blue-400 resize-none"
+                  placeholder=" "
+                />
+                <label
+                  htmlFor="message"
+                  className="absolute left-3 -top-2 text-xs bg-white px-1 text-blue-400"
+                >
+                  Address
+                </label>
+              </div>
+              <FloatingInput label="City" name="City" type="City" />
+              <FloatingInput label="State/Province" name="State/Province" type="State/Province" />
+              <FloatingInput label="Country" name="Country" type="Country" />
+              <FloatingInput label="Zip Code" name="Zip Code" type="Zip Code" />
             <button
               type="submit"
               className="w-full bg-blue-300 hover:bg-blue-400 text-white font-semibold py-2 rounded-md transition"
@@ -59,15 +79,12 @@ const Login = () => {
           </form>
 
           {/* Footer Links */}
-          <div className="mt-4 text-sm text-gray-600 text-center space-y-1">
+          <div className="mt-4 text-sm text-gray-600 text-left space-y-1">
             <p>
-              Need an Account?{' '}
-              <Link to="/create-account" className="text-blue-500 hover:underline">Create an Account </Link>
+              back to{' '}
+              <Link to="/login" className="text-blue-500 underline">login </Link>
             </p>
-            <p>
-              Did you forget your password?{' '}
-              <Link to="/forgot-password" className="text-blue-500 underline">Forgot Password </Link>
-            </p>
+          
           </div>
         </div>
       </div>
@@ -75,4 +92,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default CreateAccount

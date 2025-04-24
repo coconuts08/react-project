@@ -12,7 +12,7 @@ const ModalDonor = ({ isOpen, onClose, title }) => {
         </div>
         <div className="p-4 space-y-4">
         <select className="w-full border p-2 rounded" required>
-            <option value="">-- Designation --</option>
+            <option value="">{title}</option>
             <option value=""> Meal For Christmast</option>
           </select>
           <input className="w-full border p-2 rounded" type="number" placeholder="Amount" />

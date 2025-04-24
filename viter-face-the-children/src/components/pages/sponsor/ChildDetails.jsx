@@ -35,22 +35,22 @@ const ChildDetails = () => {
   const sponsoredPercent = parseFloat(child.sponsored.replace("%", ""));
 
   return (
-    <div className="px-4 py-8 max-w-5xl mx-auto pt-30">
+    <div className="px-4 py-8 max-w-5xl mx-auto pt-45 pb-35">
       <div className="flex flex-col md:flex-row gap-6 items-start">
-        <div className="w-full md:w-1/3">
+        <div className="w-100 pl-35  md:w-2xl">
           <div className="overflow-hidden aspect-[3/4]">
             <img
               src={child.img}
               alt={child.name}
-              className="w-full h-full object-cover"
+              className="w-full h-full sm:w-80 sm:h-full  object-cover"
             />
           </div>
-          <div className="relative w-full h-7 bg-orange-300 ">
+          <div className="relative w-full h-7 md:w-80 sm:h-10  bg-orange-300 ">
             <div
-              className="absolute top-0 left-0 h-full bg-orange-500"
+              className="absolute top-0 left-0 w-full h-full bg-orange-500"
               style={{ width: `${sponsoredPercent}%` }}
             ></div>
-            <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white font-semibold text-sm z-10">
+            <div className="absolute top-0 left-0  w-full h-full flex items-center justify-center text-white font-semibold text-sm z-10">
               {child.sponsored} - Sponsored
             </div>
           </div>
@@ -58,8 +58,8 @@ const ChildDetails = () => {
 
         <div className="w-full md:w-2/3">
           <h2 className="text-xl font-semibold mb-2">{child.name}</h2>
-          <p className="text-sm mb-1"><strong>Age:</strong> {child.age}</p>
-          <p className="text-sm mb-4"><strong>Birthday:</strong> {child.birthday}</p>
+          <p className="text-sm mb-1">Age: {child.age}</p>
+          <p className="text-sm mb-4">Birthday: {child.birthday}</p>
 
           <h3 className="font-semibold text-md mb-1">My Story</h3>
           <p className="text-sm text-gray-700 mb-4">
@@ -67,7 +67,7 @@ const ChildDetails = () => {
           </p>
 
           <button
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+            className="px-4 py-1 bg-primary text-white rounded hover:bg-blue-600"
             onClick={openModal}
           >
             Sponsor Now

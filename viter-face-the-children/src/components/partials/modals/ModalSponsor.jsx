@@ -4,7 +4,7 @@ const ModalSponsor = ({ child, onClose }) => {
   if (!child) return null;
 
   return (
-    <div className="fixed inset-0 bg-opacity-50 flex justify-center items-center z-50 ">
+    <div className="fixed inset-0 bg-opacity-50 flex justify-center items-center z-50  ">
       <div className="bg-white rounded-md w-[90%] max-w-md shadow-lg">
         {/* Header with blue background and aligned close button */}
         <div className="bg-blue-500 text-white p-4 rounded-t-md flex justify-between items-center">

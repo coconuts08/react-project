@@ -30,7 +30,7 @@ const ForgotPassword = () => {
   
 
   return (
-    <section className="flex items-center justify-center min-h-screen bg-white px-4">
+    <section className="flex items-center justify-center min-h-150 bg-white px-4">
       <div className="w-full max-w-md">
         {/* Logo + Heading */}
         <div className="text-center mb-6">
@@ -38,7 +38,7 @@ const ForgotPassword = () => {
             <img
               src="/ftc_svg_logo.svg"
               alt="Hand Logo"
-              className="w-100 h-20"
+              className="w-80 h-20"
             />
            
           </div>
@@ -46,7 +46,7 @@ const ForgotPassword = () => {
 
         {/* Login Form */}
         <div className="bg-white rounded-lg shadow p-6">
-          <h2 className="text-lg font-bold text-gray-700 mb-4">LOGIN</h2>
+          <h2 className="text-lg font-semibold text-gray-700 mb-4 uppercase">Forgot Password</h2>
           <form onSubmit={handleLogin} className="space-y-4">
           <FloatingInput label="Email" name="Email" />
    

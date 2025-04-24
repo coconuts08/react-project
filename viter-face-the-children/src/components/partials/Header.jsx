@@ -14,7 +14,7 @@ const Header = () => {
     <div className="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between text-white text-[10px]">
       <div />
       <div className="flex space-x-4">
-        <a href="#">Visit Philippine Frontline Ministries</a>
+        <a href="https://www.thefrontline.asia/">Visit Philippine Frontline Ministries</a>
         <Link to="/login" className="text-white">login </Link>
       </div>
     </div>
@@ -89,11 +89,11 @@ const Header = () => {
 
       {/* Slide-in Mobile Menu */}
       <div
-        className={`fixed top-19 left-0 right-0 h-[calc(100vh-4rem)] w-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-40 ${
+        className={`fixed top-19 left-0 right-0 h-[calc(100vh-4rem)] w-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-40  ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
       >
-        <ul className="flex flex-col items-center justify-center space-y-4 mt-8 text-sm text-gray-800">
+        <ul className="flex flex-col items-center justify-center space-y-4 mt-8 text-sm text-gray-800 uppercase">
         <li className={isActive('/')}>
     <Link to="/" className="text-textyellow">
       Home
