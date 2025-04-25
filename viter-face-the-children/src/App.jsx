@@ -42,7 +42,7 @@ const App = () => {
         <Route path="/faq" element={<Faqsection/>}/>
         <Route path="/strategy" element={<StrategySection/>}/>
         <Route path="/contact" element={<ContactSection/>}/>
-        <Route path="/sponsor" element={<SponsorSection/>}/>
+        <Route path="/sponsor" element={<ChildCardHolder/>}/>
         <Route path="/donate" element={<Donate/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/create-account" element={<CreateAccount/>}/>
