@@ -20,6 +20,7 @@ import ChildDetailsHolder from './components/pages/sponsor/ChildDetailsHolder'
 import DonateDetails from './components/pages/donate/DonateDetails'
 import DonateDetailsHolder from './components/pages/donate/DonateDetailsHolder'
 import ChildGrid from './components/pages/sponsor/ChildGrid'
+import ChildCardHolder from './components/pages/sponsor/ChildCardHolder'
 
 
 
@@ -48,6 +49,7 @@ const App = () => {
         <Route path="/forgot-password" element={<ForgotPassword/>}/>
         <Route path="/child-details" element={<ChildDetailsHolder/>}/>
         <Route path="/donate-details" element={<DonateDetailsHolder/>}/>
+        <Route path="/cards" element={<ChildCardHolder/>}/>
        
         
       </Routes>
