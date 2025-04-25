@@ -32,7 +32,7 @@ const ForgotPassword = () => {
   return (
     <section className="flex items-center justify-center min-h-150 bg-white px-4">
       <div className="w-full max-w-md">
-        {/* Logo + Heading */}
+ 
         <div className="text-center mb-6">
           <div className="flex flex-col items-center space-y-2">
             <img
@@ -44,7 +44,7 @@ const ForgotPassword = () => {
           </div>
         </div>
 
-        {/* Login Form */}
+       
         <div className="bg-white rounded-lg shadow p-6">
           <h2 className="text-lg font-semibold text-gray-700 mb-4 uppercase">Forgot Password</h2>
           <form onSubmit={handleLogin} className="space-y-4">
@@ -58,7 +58,7 @@ const ForgotPassword = () => {
             </button>
           </form>
 
-          {/* Footer Links */}
+    
           <div className="mt-4 text-sm text-gray-600 text-left space-y-1">
             <p>
               back to{' '}

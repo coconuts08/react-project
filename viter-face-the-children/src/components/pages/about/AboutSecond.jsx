@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutSecond = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between px-6 py-20 max-w-7xl mx-auto gap-10">
+    <section className="flex flex-col-reverse md:flex-row items-center justify-between px-6 py-20 max-w-7xl mx-auto gap-10">
 
   
       <div className="max-w-xl md:ml-12 md:w-1/2">

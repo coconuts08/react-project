@@ -44,7 +44,7 @@ const CreateAccount = () => {
           </div>
         </div>
 
-        {/* Login Form */}
+       
         <div className="bg-white rounded-lg  p-6">
           <h2 className="text-lg font-bold text-gray-700 mb-4">Create a Donor Account</h2>
           <form onSubmit={handleLogin} className="space-y-4">
@@ -78,7 +78,7 @@ const CreateAccount = () => {
             </button>
           </form>
 
-          {/* Footer Links */}
+          
           <div className="mt-4 text-sm text-gray-600 text-left space-y-1">
             <p>
               back to{' '}

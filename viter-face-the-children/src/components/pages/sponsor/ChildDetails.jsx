@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import ModalSponsor from "../../partials/modals/ModalSponsor";
 
-
 const ChildDetails = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -10,13 +9,8 @@ const ChildDetails = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   if (!child) {
     return (
@@ -35,39 +29,40 @@ const ChildDetails = () => {
   const sponsoredPercent = parseFloat(child.sponsored.replace("%", ""));
 
   return (
-    <div className="px-4 py-8 max-w-5xl mx-auto pt-45 pb-35">
-      <div className="flex flex-col md:flex-row gap-6 items-start">
-        <div className="w-100 pl-35  md:w-2xl">
-          <div className="overflow-hidden aspect-[3/4]">
-            <img
-              src={child.img}
-              alt={child.name}
-              className="w-full h-full sm:w-80 sm:h-full  object-cover"
-            />
-          </div>
-          <div className="relative w-full h-7 md:w-80 sm:h-10  bg-orange-300 ">
+    <div className="px-4 py-8 max-w-6xl mx-auto pt-50">
+      <div className="flex flex-col md:flex-row flex-wrap gap-6">
+      
+        <div className="w-full sm:w-64 flex flex-col items-center">
+          <img
+            src={child.img}
+            alt={child.name}
+            className="w-64 h-80 object-cover rounded shadow-md"
+          />
+
+          <div className="relative w-64 h-10  bg-orange-300 rounded overflow-hidden">
             <div
-              className="absolute top-0 left-0 w-full h-full bg-orange-500"
+              className="absolute top-0 left-0 h-full bg-orange-500"
               style={{ width: `${sponsoredPercent}%` }}
             ></div>
-            <div className="absolute top-0 left-0  w-full h-full flex items-center justify-center text-white font-semibold text-sm z-10">
+            <div className="absolute inset-0 flex items-center justify-center text-white font-semibold text-sm z-10">
               {child.sponsored} - Sponsored
             </div>
           </div>
         </div>
 
-        <div className="w-full md:w-2/3">
-          <h2 className="text-xl font-semibold mb-2">{child.name}</h2>
-          <p className="text-sm mb-1">Age: {child.age}</p>
-          <p className="text-sm mb-4">Birthday: {child.birthday}</p>
+     
+        <div className="flex-1">
+          <h2 className="text-2xl font-semibold mb-2">{child.name}</h2>
+          <p className="text-base mb-1">Age: {child.age}</p>
+          <p className="text-base mb-4">Birthday: {child.birthday}</p>
 
-          <h3 className="font-semibold text-md mb-1">My Story</h3>
+          <h3 className="font-semibold text-lg mb-1">My Story</h3>
           <p className="text-sm text-gray-700 mb-4">
             {child.story ? child.story : "This child's story will be added soon."}
           </p>
 
           <button
-            className="px-4 py-1 bg-primary text-white rounded hover:bg-blue-600"
+            className="px-6 py-2 bg-primary text-white rounded hover:bg-blue-600"
             onClick={openModal}
           >
             Sponsor Now
@@ -75,9 +70,7 @@ const ChildDetails = () => {
         </div>
       </div>
 
-      {isModalOpen && (
-        <ModalSponsor child={child} onClose={closeModal} />
-      )}
+      {isModalOpen && <ModalSponsor child={child} onClose={closeModal} />}
     </div>
   );
 };

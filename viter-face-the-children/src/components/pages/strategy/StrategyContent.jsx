@@ -80,10 +80,10 @@ const StrategyContent = () => {
     </section>
   
 
-      {/* Section: Love Never Fails */}
+      
       <section className="bg-gray-100 py-16 px-6">
   <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
-    {/* Image (first on mobile and desktop) */}
+    
     <div className="order-1 md:order-1 md:w-1/2">
       <img
         src="./public/img/Strategy/s-love.webp"
@@ -92,7 +92,7 @@ const StrategyContent = () => {
       />
     </div>
 
-    {/* Text (second on mobile and desktop) */}
+ 
     <div className="order-2 md:order-2 md:w-1/2">
       <p className="text-xs font-semisemibold text-orange-500 uppercase mb-2">Prevails Forever</p>
       <h2 className="text-3xl font-semibold text-blue-400 mb-4">Love Never Fails</h2>
