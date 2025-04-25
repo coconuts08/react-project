@@ -36,8 +36,7 @@ const children = [
   { name: 'Marian Nhicole B', sponsored: '100.00%', img:'https://facethechildren.org/images/opt-marian.jpg',age: '22',
     birthday: 'Jul 24, 2003', story: "I have been living at the FTC Boarding Home for many years. I enjoy dancing and reading, and am happy to be attending the Frontline Christian Academy, where I am in grade six. Before I was living on the streets of Manila, with my sisters and younger brother, and our mother. My mother was always sacrificing for us to get food and to let my two sisters go to school. One day we met two missionaries from Frontline who started caring about us. One evening my stepfather hot into trouble with my mom and brother, so my mom went to the police station, and our stepfather ran away. After this FTC helped us, and brought us to the boarding homes. I like it here because there is an opportunity to grow up in a safe environment, and to be educated. There are many people here that love us and help us to grow spiritually and learn about the Bible and God. I thank God for all the blessings I have received!" },
 
-
-  
+    
 ];
 
 const ChildGridSecond = () => {

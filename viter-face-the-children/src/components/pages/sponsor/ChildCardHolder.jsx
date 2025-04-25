@@ -33,7 +33,9 @@ export default function SponsorSection() {
         </div>
 
         {/* Cards */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+        <div className="w-full flex flex-wrap justify-center gap-6">
+
+
           {view === "resident" && (
             <>
               <ChildCard
@@ -136,76 +138,85 @@ export default function SponsorSection() {
     name="Andrea C."
     percent={62.5}
   />
-              <div className="col-span-full flex justify-center">
-              <ChildCard
+             
+
+  <ChildCard
     img="https://facethechildren.org/images/opt-cornilito.jpg"
     name="Cornnelito D."
     percent={100.0}
   />
-              </div>
+
+
+          
             </>
           )}
 
           {view === "nonResident" && (
             <>
               <ChildCard
-                img="https://facethechildren.org/images/John-luke-b.jpg"
-                name="Trixie Mae N"
-                percent={37.5}
-              />
-              <ChildCard
-                img="https://facethechildren.org/images/John-luke-b.jpg"
-                name="Danica V"
-                percent={40.0}
-              />
-              <ChildCard
-                img="https://facethechildren.org/images/John-luke-b.jpg"
-                name="Rose Mae N"
-                percent={40.0}
-              />
-              <ChildCard
-                img="https://facethechildren.org/images/John-luke-b.jpg"
-                name="Rachelle M"
-                percent={42.0}
-              />
-              <ChildCard
-                img="https://facethechildren.org/images/John-luke-b.jpg"
-                name="Richard T"
-                percent={45.0}
-              />
-              <ChildCard
-                img="https://facethechildren.org/images/John-luke-b.jpg"
-                name="Mary Grace V"
-                percent={50.0}
-              />
-              <ChildCard
-                img="https://facethechildren.org/images/John-luke-b.jpg"
-                name="Eugene Lance D"
-                percent={52.5}
-              />
-              <ChildCard
-                img="https://facethechildren.org/images/John-luke-b.jpg"
-                name="Gladys T"
-                percent={57.5}
-              />
+    img="https://facethechildren.org/images/trixie.jpg"
+    name="Trixie Mae N"
+    percent={37.5}
+  />
+  <ChildCard
+    img="https://facethechildren.org/images/danica.jpg"
+    name="Danica V"
+    percent={40.0}
+  />
+  <ChildCard
+    img="https://facethechildren.org/images/rosemae.jpg"
+    name="Rose Mae N"
+    percent={40.0}
+  />
+  <ChildCard
+    img="https://facethechildren.org/images/opt-rachelle.jpg"
+    name="Rachelle M"
+    percent={42.0}
+  />
+  <ChildCard
+    img="https://facethechildren.org/images/opt-don.jpg"
+    name="Richard T"
+    percent={45.0}
+  />
+  <ChildCard
+    img="https://facethechildren.org/images/marygrace.jpg"
+    name="Mary Grace V"
+    percent={50.0}
+  />
+  <ChildCard
+    img="https://facethechildren.org/images/eugene.jpg"
+    name="Eugene Lance D"
+    percent={52.5}
+  />
+  <ChildCard
+    img="https://facethechildren.org/images/opt-gladays.jpg"
+    name="Gladys T"
+    percent={57.5}
+  />
 
-              <div className="col-span-full flex justify-center">
-                <ChildCard
-                img="https://facethechildren.org/images/John-luke-b.jpg"
-                name="Julie Ann T"
-                  percent={60.0}
-                />
-                <ChildCard
-                img="https://facethechildren.org/images/John-luke-b.jpg"
-                name="Mark John B"
-                  percent={85.0}
-                />
-                <ChildCard
-                img="https://facethechildren.org/images/John-luke-b.jpg"
-                name="Marian Nhicole B"
-                  percent={100.0}
-                />
-              </div>
+              {/* Last row of resident children - centered */}
+
+  <ChildCard
+    img="https://facethechildren.org/images/julieann.jpg"
+    name="Julie Ann T
+"
+    percent={60.00}
+  />
+  <ChildCard
+    img="https://facethechildren.org/images/opt-mark.jpg"
+    name="Mark John B"
+    percent={85.00}
+  />
+  <ChildCard
+    img="https://facethechildren.org/images/opt-marian.jpg"
+    name="Marian Nhicole B"
+    percent={100.00}
+  />
+
+    
+    
+
+
             </>
           )}
         </div>
