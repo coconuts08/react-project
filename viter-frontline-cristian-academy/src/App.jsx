@@ -7,11 +7,12 @@ import AdmisionSection from './components/pages/admision/AdmisionSection'
 import ServicesSection from './components/pages/services/ServicesSection'
 import GallerySection from './components/pages/gallery/GallerySection'
 import ContactSection from './components/pages/contact/ContactSection'
+import FaqsSection from './components/pages/faqs/FaqsSection'
 
 const App = () => {
   return (
     <>
-      <ContactSection/>
+      <FaqsSection/>
     </>
   )
 }
