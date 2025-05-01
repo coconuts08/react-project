@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaPhoneAlt, FaMobileAlt } from "react-icons/fa";
 import { HiOutlineMenu, HiOutlineArrowNarrowLeft } from "react-icons/hi";
+import { Link, Links } from "react-router";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -73,13 +74,14 @@ export default function Header() {
           {/* Menu Items */}
           <div className="flex flex-1 items-center justify-center">
             {[
-              "HOME",
-              "ABOUT",
-              "ADMISSION",
-              "SERVICES",
-              "GALLERY",
-              "CONTACT",
-              "LITERARIO",
+              <Link to="/home" >Home </Link>,
+              <Link to="/about" >ABOUT </Link>,
+              <Link to="/admision" >ADMISSION </Link>,
+              <Link to="/services" >SERVICES </Link>,
+              <Link to="/gallery" >GALLERY </Link>,
+              <Link to="/contact" >CONTACT </Link>,
+              <Link to="/literario" >LITERARIO </Link>,
+              
             ].map((item, index) => (
               <div
                 key={index}
@@ -113,13 +115,13 @@ export default function Header() {
         >
           <div className="flex flex-col items-center gap-6 mt-8 font-raleway text-gray-700">
             {[
-              "HOME",
-              "ABOUT",
-              "ADMISSION",
-              "SERVICES",
-              "GALLERY",
-              "CONTACT",
-              "LITERARIO",
+              <Link to="/home" >Home </Link>,
+              <Link to="/about" >ABOUT </Link>,
+              <Link to="/admision" >ADMISSION </Link>,
+              <Link to="/services" >SERVICES </Link>,
+              <Link to="/gallery" >GALLERY </Link>,
+              <Link to="/contact" >CONTACT </Link>,
+              <Link to="/literario" >LITERARIO </Link>,
             ].map((item, index) => (
               <span key={index} className="text-lg">
                 {item}

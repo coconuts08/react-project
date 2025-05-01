@@ -41,8 +41,8 @@ const ContactSection = () => {
       </div>
 
       {/* Contact Info Section */}
-      <div className="flex-1 p-4 text-gray-800 shadow">
-        <h2 className="text-3xl font-light mb-6">Contact Us</h2>
+      <div className="flex-1 p-4 text-gray-800 ">
+        <h2 className="text-8xl font-light mb-6">Contact Us</h2>
         <div className="space-y-4 text-sm">
           <div className="flex items-center gap-2">
           <FaPhoneAlt size={20} className='text-green-600' />

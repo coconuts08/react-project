@@ -112,7 +112,7 @@ const AdmisionSection = () => {
             <img src="./public/img/admission/Elem-1.jpg" alt="Jeffrey and Rowena" className="rounded shadow" />
             <img src="./public/img/admission/Elem-2.jpg" alt="Jeffrey and Rowena" className="rounded shadow" />
             <img src="./public/img/admission/Elem-3.jpg" alt="Jeffrey and Rowena" className="rounded shadow" />
-            <img src="./public/img/admission/FCA-Junior-High-Performance-1024x683-1.jpg" alt="Jeffrey and Rowena" className="rounded shadow h-33" />
+            <img src="./public/img/admission/FCA-Junior-High-Performance-1024x683-1.jpg" alt="Jeffrey and Rowena" className="rounded shadow h-53" />
 
             </div>
           </>
@@ -141,14 +141,14 @@ const AdmisionSection = () => {
              <img src="./public/img/admission/HS-1-1.jpg" alt="Jeffrey and Rowena" className="rounded shadow" />
              <img src="./public/img/admission/HS-4-1.jpg" alt="Jeffrey and Rowena" className="rounded shadow" />
              <img src="./public/img/admission/HS-5-1.jpg" alt="Jeffrey and Rowena" className="rounded shadow" />
-             <img src="./public/img/admission/JHS-3.jpg" alt="Jeffrey and Rowena" className="rounded shadow h-33" />
+             <img src="./public/img/admission/JHS-3.jpg" alt="Jeffrey and Rowena" className="rounded shadow " />
  
              </div>
              <div className="grid grid-cols-1 md:grid-cols-4 gap-2 pl-8 justify-start px-50">
              <img src="./public/img/admission/H1-.jpg" alt="Jeffrey and Rowena" className="rounded shadow" />
              <img src="./public/img/admission/H2-1.jpg" alt="Jeffrey and Rowena" className="rounded shadow" />
              <img src="./public/img/admission/H3-1.jpg" alt="Jeffrey and Rowena" className="rounded shadow" />
-             <img src="./public/img/admission/H4-1.jpg" alt="Jeffrey and Rowena" className="rounded shadow h-33" />
+             <img src="./public/img/admission/H4-1.jpg" alt="Jeffrey and Rowena" className="rounded shadow " />
  
              </div>
            </>

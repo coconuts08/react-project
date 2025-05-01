@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Youtube = () => {
+const YoutubeSection = () => {
   return (
     <section className="w-full bg-lightgray py-10 px-50 pt-50">
       <div className="container px-4">
@@ -19,4 +19,4 @@ const Youtube = () => {
   );
 };
 
-export default Youtube;
+export default YoutubeSection;

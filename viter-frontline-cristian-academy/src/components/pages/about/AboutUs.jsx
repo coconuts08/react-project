@@ -14,7 +14,7 @@ const AboutUs = () => {
 
 
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8 justify-start px-50">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8 justify-start px-200">
               <img src="./public/img/about/the-Founder.jpg" alt="Jeffrey and Rowena" className="rounded shadow" />
               <img src="./public/img/about/founders2-2.jpg" alt="Family or ministry group" className="rounded shadow" />
             </div>
@@ -41,7 +41,7 @@ const AboutUs = () => {
 
 
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8 justify-start px-50">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8 justify-start px-200">
               <img src="./public/img/about/Rectangle-61.png" alt="History 1" className="rounded shadow" />
               <img src="./public/img/about/Rectangle-55.png" alt="History 2" className="rounded shadow" />
             </div>
