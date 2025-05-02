@@ -16,6 +16,8 @@ import About from './components/pages/about/About'
 import Services from './components/pages/services/Services'
 import Gallery from './components/pages/gallery/Gallery'
 import Contact from './components/pages/contact/Contact'
+import Faqs from './components/pages/faqs/Faqs'
+import PageNotFound from './components/partials/PageNotFound'
 
 const App = () => {
   return (
@@ -25,13 +27,14 @@ const App = () => {
       <Router>
       <Routes>
 
-        <Route path="/home" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/admision" element={<Admision/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/services" element={<Services/>}/>
         <Route path="/gallery" element={<Gallery/>}/>
         <Route path="/contact" element={<Contact/>}/>
-       
+        <Route path="/faqs" element={<Faqs/>}/>
+        <Route path="*" element={<PageNotFound/>}/>
        
         
       </Routes>

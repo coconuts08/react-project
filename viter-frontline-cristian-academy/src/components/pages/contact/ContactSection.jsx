@@ -7,7 +7,7 @@ import { MdOutlineSmartphone } from 'react-icons/md';
 
 const ContactSection = () => {
   return (
-    <div className="flex flex-col lg:flex-row p-8 bg-white rounded  max-w-6xl mx-auto">
+    <div className="flex flex-col-reverse md:flex-col lg:flex-row p-8 bg-white rounded  max-w-6xl mx-auto">
       {/* Form Section */}
       <div className="flex-1 p-4 bg-white shadow-2xl">
         <form className="space-y-4">
@@ -33,7 +33,7 @@ const ContactSection = () => {
           ></textarea>
           <button
             type="submit"
-            className="bg-green-600 text-white px-50 py-2 rounded hover:bg-green-700 transition"
+            className="bg-green-600 text-white px-30 md:px-50 py-2 rounded hover:bg-green-700 transition"
           >
             Send
           </button>
@@ -58,9 +58,7 @@ const ContactSection = () => {
           </div>
           <div className="flex items-center gap-2">
           <FaFacebook size={20} className='text-green-600'/>
-            <a href="https://facebook.com/frontlinechristianacademy" target="_blank" rel="noreferrer" className="text-blue-600">
-              facebook.com/frontlinechristianacademy
-            </a>
+            <p>facebook.com/frontlinechristianacademy</p>
           </div>
           <div className="flex items-center gap-2">
           <HiMapPin size={20} className='text-green-600'/>

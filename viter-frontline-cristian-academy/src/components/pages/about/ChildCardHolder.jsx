@@ -9,7 +9,7 @@ export default function SponsorSection() {
 
       <div className="xl:max-w-7xl mx-20 px-4 flex flex-col items-center gap-12 justify-center flex-grow">
         {/* Cards Grid */}
-        <div className="w-full  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+        <div className="w-70 md:w-full  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
           <TeacherCard
             img="https://fca.edu.ph/wp-content/uploads/2024/08/Maam-Doodz-1.png"
             name="Rhoda Lynn P. Dayo, MBA"
@@ -196,3 +196,4 @@ export default function SponsorSection() {
     </section>
   );
 }
+

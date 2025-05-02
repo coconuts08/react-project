@@ -2,16 +2,19 @@ import React from "react";
 
 const TeacherCard = ({ img, name, position }) => {
   return (
-    <div className="bg-white shadow overflow-hidden flex flex-col w-[265px] h-[360px]">
-      {/* Image container */}
-      <div className="w-full h-[250px]">
-        <img src={img} alt={name} className="w-full h-full object-cover object-top" />
-      </div>
+    <div className="theItem mb-12 w-[300px] h-[364px] mx-auto font-raleway">
+      <div className="theTeamPhoto relative overflow-hidden h-[300px] group">
+        <div className="absolute z-0 bottom-0 left-0 w-full h-[80%] bg-[url('https://fca.edu.ph/wp-content/uploads/2023/12/fca-logo.png')] bg-no-repeat bg-center bg-[length:90%] opacity-10 group-hover:opacity-50 group-hover:bg-[length:85%] transition-all duration-500"></div>
 
-      {/* Name and position */}
-      <div className="flex flex-col items-center justify-center p-4 flex-1">
-        <h3 className="text-base md:text-lg text-black">{name}</h3>
-        <span className="text-xs md:text-sm text-black mt-1">{position}</span>
+        <img
+          src={img}
+          alt={name}
+          className="mainImage z-10 w-full h-[280px] object-contain object-top absolute top-[20%] left-0 transition-all ease-in-out duration-500 scale-[1.5] group-hover:scale-[1.6] group-hover:top-[25%]"
+        />
+      </div>
+      <div className="theTeamName mt-4 text-center">
+        <h3 className="text-lg font-semibold">{name}</h3>
+        <p className="text-sm text-gray-600">{position}</p>
       </div>
     </div>
   );

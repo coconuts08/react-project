@@ -32,7 +32,7 @@ const Banner = () => {
           continue to reach for our vision of impacting the nation through the
           development of Godly steward leaders.
         </p>
-        <button className="mt-6 px-6 py-2 bg-mygreen hover:bg-green-700 rounded text-white text-sm font-medium">
+        <button className="mt-6 px-6 py-2 bg-green-600 hover:bg-yellow-500 rounded text-white text-sm font-medium">
           Inquire now!
         </button>
       </div>

@@ -74,7 +74,7 @@ export default function Header() {
           {/* Menu Items */}
           <div className="flex flex-1 items-center justify-center">
             {[
-              <Link to="/home" >Home </Link>,
+              <Link to="/" >Home </Link>,
               <Link to="/about" >ABOUT </Link>,
               <Link to="/admision" >ADMISSION </Link>,
               <Link to="/services" >SERVICES </Link>,
@@ -109,13 +109,13 @@ export default function Header() {
 
         {/* Mobile Slide-in Panel */}
         <div
-          className={`fixed top-[88px] left-0 right-0 h-[calc(100vh-88px)] bg-white transition-transform duration-300 ease-in-out z-40 ${
+          className={`fixed top-[60px] left-0 right-0 h-[calc(110vh-88px)] bg-white transition-transform duration-300 ease-in-out z-40 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex flex-col items-center gap-6 mt-8 font-raleway text-gray-700">
+          <div className="flex flex-col items-center gap-4 mt-8 font-raleway text-gray-700 uppercase">
             {[
-              <Link to="/home" >Home </Link>,
+              <Link to="/" >Home </Link>,
               <Link to="/about" >ABOUT </Link>,
               <Link to="/admision" >ADMISSION </Link>,
               <Link to="/services" >SERVICES </Link>,
@@ -149,7 +149,7 @@ export default function Header() {
               <button className="bg-blue hover:bg-blue-800 text-white px-4 py-2 rounded">
                 Facebook
               </button>
-              <button className="w-full rounded-md border border-black px-4 py-2 text-xs text-black hover:bg-gray-100">
+              <button className="w-25 rounded-md border border-black px-4 py-2 text-xs text-black hover:bg-gray-100">
                 FAQ's
               </button>
             </div>
